@@ -5,3 +5,17 @@
 body {
   font-family: Inter, sans-serif;
 }
+
+.parent {
+  position: relative;
+}
+
+.parent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #BFBFBF;
+}
