@@ -6,7 +6,7 @@ interface JsonTreeViewProps {
 export function JsonTreeView({
   json
 }: JsonTreeViewProps) {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unused-vars
   function formatJsonToTreeView(json: any, indent: number = 0, isLast: boolean = true): JSX.Element {
     const indentString = ' '.repeat(indent * 4);
     if (Array.isArray(json)) {
